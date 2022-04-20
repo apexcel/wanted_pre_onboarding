@@ -1,26 +1,20 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import InputExample from './components/Input/Example';
+import TabExample from './components/Tab/Example';
+import SliderExample from './components/Slider/Example';
+import SelectExample from './components/Select/Example';
+import Toggler from './components/Toggler';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const App: React.FC = () => {
+	return (
+		<div>
+			<Toggler text1='on' text2='off'/>
+			<TabExample />
+			<InputExample />
+			<SliderExample />
+			<SelectExample />
+		</div>
+	)
+};
 
 export default App;

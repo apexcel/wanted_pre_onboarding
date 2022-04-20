@@ -22,5 +22,8 @@
   },
   "include": [
     "src"
+  ],
+  "exclude": [
+    "./src/**/*.(story|stories)@.(js|jsx|ts|tsx)"
   ]
 }
